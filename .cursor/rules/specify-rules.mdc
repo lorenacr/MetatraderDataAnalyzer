@@ -1,0 +1,37 @@
+﻿---
+description: Project Development Guidelines
+globs: ["**/*"]
+alwaysApply: true
+---
+# MetatraderDataAnalyzer Development Guidelines
+
+Auto-generated from all feature plans. Last updated: 2026-03-24
+
+## Active Technologies
+- MQL5 (compilar no MetaEditor do MT5 instalado; `#property version` no `.mq5`) + API MT5 (séries, `Indicators`, `Canvas`, `Chart`, `Objects`); sem DLLs obrigatórias (001-statistical-distribution-ea)
+- `GlobalVariables` e/ou `MQL5\Files` com prefixo do EA para preferências e última expressão (001-statistical-distribution-ea)
+
+- MQL5 (build alinhado ao MetaTrader 5 atual; sem número fixo — usar `#property version` e compilar no MetaEditor do terminal instalado) + API padrão MT5 (`Trade`, séries de preço, `Indicators`, `Canvas`, `Chart`); sem bibliotecas externas obrigatórias (001-statistical-distribution-ea)
+
+## Project Structure
+
+```text
+src/
+tests/
+```
+
+## Commands
+
+# Add commands for MQL5 (build alinhado ao MetaTrader 5 atual; sem número fixo — usar `#property version` e compilar no MetaEditor do terminal instalado)
+
+## Code Style
+
+MQL5 (build alinhado ao MetaTrader 5 atual; sem número fixo — usar `#property version` e compilar no MetaEditor do terminal instalado): Follow standard conventions
+
+## Recent Changes
+- 001-statistical-distribution-ea: Added MQL5 (compilar no MetaEditor do MT5 instalado; `#property version` no `.mq5`) + API MT5 (séries, `Indicators`, `Canvas`, `Chart`, `Objects`); sem DLLs obrigatórias
+
+- 001-statistical-distribution-ea: Added MQL5 (build alinhado ao MetaTrader 5 atual; sem número fixo — usar `#property version` e compilar no MetaEditor do terminal instalado) + API padrão MT5 (`Trade`, séries de preço, `Indicators`, `Canvas`, `Chart`); sem bibliotecas externas obrigatórias
+
+<!-- MANUAL ADDITIONS START -->
+<!-- MANUAL ADDITIONS END -->
